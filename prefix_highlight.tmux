@@ -53,8 +53,8 @@ main() {
         bg_color=$(tmux_option "$bg_color_config" "$default_bg") \
         show_copy_mode=$(tmux_option "$show_copy_config" "off") \
         show_sync_mode=$(tmux_option "$show_sync_config" "off") \
-        output_prefix=$(tmux_option "$output_prefix" " ") \
-        output_suffix=$(tmux_option "$output_suffix" " ") \
+        output_prefix=$(tmux_option "$output_prefix" "") \
+        output_suffix=$(tmux_option "$output_suffix" "") \
         copy_attr=$(tmux_option "$copy_attr_config" "$default_copy_attr") \
         sync_attr=$(tmux_option "$sync_attr_config" "$default_sync_attr") \
         prefix_prompt=$(tmux_option "$prefix_prompt" "$default_prefix_prompt") \
